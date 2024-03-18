@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaenquiries.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    
+</head>
+<body>
+    <div id="topbar">
+        <div class="logo">
+            <p>Vishwas Jain</p>
+        </div>
+        <nav id="desktop-nav">
+            <div>
+                <ul class="nav-links">
+                    <li><a class="menu_li" href="#about">About</a></li>
+                    <li><a class="menu_li" href="#experience">Experience</a></li>
+                    <li><a class="menu_li" href="#education">Education</a></li>
+                    <li><a class="menu_li" href="#projects">Projects</a></li>
+                    <li><a class="menu_li" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <!-- <div class="hamb-logo">Vishwas Jain</div> -->
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="ToggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a onclick="ToggleMenu()" href="#about">About</a></li>
+                    <li><a onclick="ToggleMenu()" href="#experience">Experience</a></li>
+                    <li><a onclick="ToggleMenu()" href="#education">Education</a></li>
+                    <li><a onclick="ToggleMenu()" href="#projects">Projects</a></li>
+                    <li><a onclick="ToggleMenu()" href="#contact">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section id="profile">
+        <div class="section__profile_pic_container">
+            <img src="./assests/profilepic.png" alt="Profile Picture VJ">
+        </div>
+        <div class="section__text">
+            <p id="secion__text_p1">Hello!</p>
+            <h1 class="section__text_title">Vishwas Jain</h1>
+            <p class="section__text_p2">Robotic Software Engineer | Firmware Engineer</p>
+            <div class="section__button_contrainer">
+                <button class="section__button_1" onclick="window.open('./assests/VishwasCV.pdf')">Curriculum Vitae</button>
+            </div>
+            <div  id="social-container">
+                <img src="./assests/LI-In-Bug.png" alt="LinkedIn Profile Link" height="20px" width="40px" class="icon" onclick="window.open('https://www.linkedin.com/in/vishwasjain393/','_blank')">
+                <img src="./assests/github-mark.png" alt="GitHub Profile Link" class="icon" onclick="window.open('https://github.com/vishwas393','_blank')">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="section__about_me-title">
+            <div class="secion__text_p1">Briefly</div>
+            <h1 class="section__text_title">About Me</h1>
+        </div>
+        <div class="section__about_me-container">
+            
+            <div class="section__about_me_info-container">
+                
+                <div class="section__aboutme_pic_container" >
+                    <img src="./assests/aboutmepicbwpotrait.png" alt="Another Photo of me">
+                </div>
+                
+                <div class="section__aboutme_info-container">
+                    <div id="section__about_me-about_me_text">
+                        <p>A versatile Engineer with proficiency in designing and implementing Software as well as Firmware for various Robots and Robotic Applications. With having experience of more than a year in Robotics field, I possess expertise primarily in Mobile Robots.</p>
+                    </div>
+                    <div class="section__aboutme_info_exp">
+                        <div class="section__about_me_info">
+                            <img src="./assests/laptop_black.png" alt="Work Experince" height="40px" width="40px">
+                            <p class="section__aboutme_text">1+ years <br><b>Robotic Software Engineer</b></p>
+                        </div>
+                        <div class="section__about_me_info">
+                            <img src="./assests/microcontroller.png" alt="Work Experince" height="40px" width="40px">
+                            <p class="section__aboutme_text">1+ years <br><b>Firmware Engineer</b></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section__about_me_info">
+                            <img src="./assests/graduation-hat.png" alt="Education" height="40px" width="40px">
+                            <p class="section__aboutme_text">M.Sc. <b>Robotic Systems Enginnering</b></p>
+                            <p class="section__aboutme_text">B.Tech. <b>Electronics and Communication Enginnering</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="secion__text_p1">Professionally</div>
+        <h1 class="section__text_title">I have worked as ...</h1>
+        <div class="secttion__exp_timeline">
+            <div class="section__exp_checkpoint">
+                <div class="section__exp_checkpoint_content">
+                    <div class="section__exp_checkpoint_expand">
+                        <p class="section__exp_title"><b>Robotic Software Engineer / Thesis</b></p>
+                        <button class="section__exp_expand_button"><img src="./assests/arrow-down-sign-to-navigate.png" alt="Expand" height="12px" width="17px"></button>
+                    </div>
+                    <p>Oct 2023 - Mar 2024 &emsp;&emsp;&emsp;&emsp; <b>N Robotics, Berlin</b></p>
+                    <p class="section__exp_keywords"><br><b>Keywords: </b>ROS2 / MATLAB / Docker / Parallel Kinematics / Local Planner / Motion Controller</p>
+                    <ul class="section__exp_tasks">
+                        <li>Deriving Forward and Inverse Kinematics Equations for the Parallel structure in the Robot</li>
+                        <li>Developing DWX Local Planner - a variant of the DWB Local Planner for Spatial motion</li>
+                        <li>Developing Motion Controller - Converts Twist Commands into Actuators’ Commands for Spatial motion</li>
+                        <li>Developing Motion Controller - Converts Twist Commands into Actuators’ Commands for Spatial motion</li>
+                        <li>Developed module to manipulate PointCloud data for Object Detection</li>
+                        <li>Experimenting with multiple simulation tools such as Gazebo, CoppeliaSim, Webots in Docker                    </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section__exp_checkpoint">
+                <div class="section__exp_checkpoint_content">
+                    <div class="section__exp_checkpoint_expand">
+                        <p class="section__exp_title"><b>Firmware Engineer / Internship</b></p>
+                        <button class="section__exp_expand_button"><img src="./assests/arrow-down-sign-to-navigate.png" alt="Expand" height="12px" width="17px"></button>
+                    </div>
+                    <p>Jul 2023 - Oct 2024 &emsp;&emsp;&emsp;&emsp; <b>N Robotics, Berlin</b></p>
+                    <p class="section__exp_keywords"><br><b>Keywords: </b>Zephyr RTOS / CAN / I2C / UDP / Protobuf</p>
+                    <ul class="section__exp_tasks">
+                        <li>Systematically designed and implemented a Lower-Level Controller on a STM32 microcontroller for a Legged Robot</li>
+                        <li>Tuned and implemented Velocity and Position Controllers for Actuators</li>
+                        <li>Initiation of actuators and sensors such as IMU, Analogue Distance Sensor, EEPROM</li>
+                        <li>Implementation of multiple communication protocols such as UDP, CAN and I2C. Also used Protobuf for custom message exchange between systems</li>
+                        <li>Configuration and Calibration of sensors and actuators in run-time</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section__exp_checkpoint">
+                <div class="section__exp_checkpoint_content">
+                    <div class="section__exp_checkpoint_expand">
+                        <p class="section__exp_title"><b>Wissenschaftliche Hilfskraft</b></p>
+                        <button class="section__exp_expand_button"><img src="./assests/arrow-down-sign-to-navigate.png" alt="Expand" height="12px" width="17px"></button>
+                    </div>
+                    <p>May 2022 - Mar 2023 &emsp;&emsp;&emsp;&emsp; <b>WZL, RWTH Aachen University, Aachen, Germany</b></p>
+                    <p class="section__exp_keywords"><br><b>Keywords: </b>ROS / MQTT / SLAM / GPS</p>
+                    <ul class="section__exp_tasks">
+                        <li>Developed Library to merge multiple pointcloud data</li>
+                        <li>Developed GUI using PyQt5 to control test-car from Remote-PC via MQTT and Ethernet</li>
+                        <li>Worked with SLAM algorithm in ROS with various sensors such as IMU, GPS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section__exp_checkpoint">
+                <div class="section__exp_checkpoint_content">
+                    <div class="section__exp_checkpoint_expand">
+                        <p class="section__exp_title"><b>Firmware Engineer</b></p>
+                        <button class="section__exp_expand_button"><img src="./assests/arrow-down-sign-to-navigate.png" alt="Expand" height="12px" width="17px"></button>
+                    </div>
+                    <p>May 2020 - Feb 2021 &emsp;&emsp;&emsp;&emsp; <b>Maharshi Electronic Systems, Ahmedabad, India</b></p>
+                    <p class="section__exp_keywords"><br><b>Keywords: </b>IoT / Embedded Programming / OTA Update / BLE</p>
+                    <ul class="section__exp_tasks">
+                        <li>Developed an application for an industrial IoT device from scratch incorporating various sensors (humidity, temperature, pressure), SPI Flash and MIP screen</li>
+                        <li>Implemented OTA firmware update via Bluetooth with encryption incorporated.</li>
+                        <li>Porting the same application into Zephyr RTOS</li>
+                    </ul>
+                </div>
+            </div>     
+
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section__contact_me">
+            <div class="secion__text_p1">Let's get in touch</div>
+            <h1 class="section__text_title">Contact Me</h1>
+            <div class="section__contact_me_mail">
+                <img src="./assests/applemail.png" alt="email" height="45px" width="50px" style="margin-right: 1em;"/>
+                <p><a href="mailto:vishwasj88@gmail.com">vishwasj88@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+         <nav>
+            <div>
+                <ul style="display: flex; list-style: none; font-size: 1.3rem; letter-spacing: 0.5px;">
+                    <li><a class="menu_li" href="#topbar">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+      </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
